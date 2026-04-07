@@ -12,8 +12,8 @@ modified: '2026-03-16'
 position: Consumer
 tags:
   - Federal Government
-  - Food Safety
   - Food
+  - Food Safety
   - Inspections
 url: >-
   https://raw.githubusercontent.com/api-evangelist/food-safety-and-inspection-service/refs/heads/main/apis.yml
@@ -21,8 +21,7 @@ specificationVersion: '0.19'
 apis:
   - aid: food-safety-and-inspection-service:food-safety-and-inspection-service
     name: Food Safety and Inspection Service
-    tags:
-      - API
+    tags: []
     humanURL: https://www.fsis.usda.gov/science-data/developer-resources/recall-api
     properties:
       - url: https://www.fsis.usda.gov/science-data/developer-resources/recall-api
