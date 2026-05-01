@@ -1,0 +1,20 @@
+name: FSIS Recall Usage Rules
+description: Operational and consumption rules for the FSIS Recall API.
+rules:
+  - id: open-data
+    statement: The API is open and does not require authentication.
+    severity: informational
+  - id: client-side-filtering
+    statement: All filtering must be performed client-side; the API returns the entire dataset.
+    severity: required
+  - id: cache-responses
+    statement: Cache responses locally to avoid repeated full-dataset downloads.
+    rationale: The endpoint returns the full recall corpus on every request.
+    severity: advisory
+  - id: not-emergency-channel
+    statement: Do not rely on the API alone for emergency public alerting.
+    rationale: USDA FSIS has authoritative public alerting channels separate from this API.
+    severity: required
+  - id: respect-government-source
+    statement: Cite USDA FSIS as the data source when redistributing.
+    severity: advisory
