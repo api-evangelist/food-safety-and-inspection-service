@@ -1,0 +1,190 @@
+{
+  "item": [
+    {
+      "id": "2f236a7e-3adc-4d4f-a36d-82ac0ae9a235",
+      "name": "Recalls",
+      "description": {
+        "content": "FSIS recall and public health alert records.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "39306f89-dfa1-4511-82bd-be2fb861e5e9",
+          "name": "List FSIS recalls and public health alerts",
+          "request": {
+            "name": "List FSIS recalls and public health alerts",
+            "description": {
+              "content": "Returns the full set of FSIS recall and public health alert records. The API is open and unauthenticated. Filtering is performed by the client; the endpoint returns the complete dataset.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "recall",
+                "v",
+                "1"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "format",
+                  "value": "<string>",
+                  "description": "Response format (the API returns JSON by default)."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9187d70a-15ae-45e5-bb07-5b15cb30e3a8",
+              "name": "List of recall records.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recall",
+                    "v",
+                    "1"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "format",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"field_recall_number\": \"string\",\n    \"field_title\": \"string\",\n    \"field_recall_classification\": \"string\",\n    \"field_recall_type\": \"string\",\n    \"field_active_notice\": \"string\",\n    \"field_recall_date\": \"1974-06-08\",\n    \"field_closed_date\": \"1952-11-30\",\n    \"field_closed_year\": \"string\",\n    \"field_year\": \"string\",\n    \"field_summary\": \"string\",\n    \"field_press_release\": \"string\",\n    \"field_archive_recall\": \"string\",\n    \"field_recall_reason\": \"string\",\n    \"field_processing\": \"string\",\n    \"field_product_items\": \"string\",\n    \"field_qty_recovered\": \"string\",\n    \"field_recall_classification_2\": \"string\",\n    \"field_recall_committee\": \"string\",\n    \"field_recall_url\": \"string\",\n    \"field_states\": \"string\",\n    \"field_risk_level\": \"string\",\n    \"field_distro_list\": \"string\",\n    \"field_company_media_contact\": \"string\",\n    \"field_establishment\": \"string\",\n    \"field_en_press_release\": \"string\",\n    \"field_es_press_release\": \"string\",\n    \"field_has_spanish\": \"string\",\n    \"field_labels\": \"string\",\n    \"field_last_modified_date\": \"1950-05-02T08:54:40.186Z\",\n    \"langcode\": \"string\"\n  },\n  {\n    \"field_recall_number\": \"string\",\n    \"field_title\": \"string\",\n    \"field_recall_classification\": \"string\",\n    \"field_recall_type\": \"string\",\n    \"field_active_notice\": \"string\",\n    \"field_recall_date\": \"2023-04-08\",\n    \"field_closed_date\": \"1994-11-12\",\n    \"field_closed_year\": \"string\",\n    \"field_year\": \"string\",\n    \"field_summary\": \"string\",\n    \"field_press_release\": \"string\",\n    \"field_archive_recall\": \"string\",\n    \"field_recall_reason\": \"string\",\n    \"field_processing\": \"string\",\n    \"field_product_items\": \"string\",\n    \"field_qty_recovered\": \"string\",\n    \"field_recall_classification_2\": \"string\",\n    \"field_recall_committee\": \"string\",\n    \"field_recall_url\": \"string\",\n    \"field_states\": \"string\",\n    \"field_risk_level\": \"string\",\n    \"field_distro_list\": \"string\",\n    \"field_company_media_contact\": \"string\",\n    \"field_establishment\": \"string\",\n    \"field_en_press_release\": \"string\",\n    \"field_es_press_release\": \"string\",\n    \"field_has_spanish\": \"string\",\n    \"field_labels\": \"string\",\n    \"field_last_modified_date\": \"1994-11-26T12:38:10.954Z\",\n    \"langcode\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "30b0bb93-7cfa-41dd-bfc4-2d67b8af0c46",
+              "name": "Resource not found.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recall",
+                    "v",
+                    "1"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "format",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "a1a4375a-900d-4668-8680-70df5db9b438",
+              "name": "Server error.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recall",
+                    "v",
+                    "1"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "format",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.fsis.usda.gov/fsis/api",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "ac6bc520-4f2a-4e67-9042-6bbded69026c",
+    "name": "FSIS Recall API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Food Safety and Inspection Service (FSIS) Recall API provides machine-readable access to recall and public health alert records for meat, poultry, and egg products regulated by USDA FSIS.\n\nContact Support:\n Name: USDA Food Safety and Inspection Service",
+      "type": "text/plain"
+    }
+  }
+}

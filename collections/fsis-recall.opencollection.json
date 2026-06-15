@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "FSIS Recall API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Recalls",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List FSIS recalls and public health alerts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+            "params": [
+              {
+                "name": "format",
+                "value": "",
+                "type": "query",
+                "description": "Response format (the API returns JSON by default)."
+              }
+            ]
+          },
+          "docs": "Returns the full set of FSIS recall and public health alert records. The API is open and unauthenticated. Filtering is performed by the client; the endpoint returns the complete dataset."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
