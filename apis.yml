@@ -5,7 +5,7 @@ description: >-
   responsible for ensuring the safety of the nation's commercial supply of meat, poultry, and egg products. FSIS
   publishes a Recall API that provides machine-readable access to recall and public health alert records.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2024-12-03'
 modified: '2026-05-19'
