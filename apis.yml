@@ -46,6 +46,8 @@ apis:
         url: >-
           https://raw.githubusercontent.com/api-evangelist/food-safety-and-inspection-service/refs/heads/main/rules/fsis-recall-rules.yml
 common:
+  - type: DomainSecurity
+    url: security/food-safety-and-inspection-service-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/usda-fsis
   - type: Website
