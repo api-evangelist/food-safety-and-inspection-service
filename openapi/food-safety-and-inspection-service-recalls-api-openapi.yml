@@ -1,11 +1,8 @@
 openapi: 3.0.3
 info:
-  title: FSIS Recall API
-  description: >-
-    The Food Safety and Inspection Service (FSIS) Recall API provides
-    machine-readable access to recall and public health alert records for
-    meat, poultry, and egg products regulated by USDA FSIS.
-  version: "1.0"
+  title: FSIS Recall Recalls API
+  description: The Food Safety and Inspection Service (FSIS) Recall API provides machine-readable access to recall and public health alert records for meat, poultry, and egg products regulated by USDA FSIS.
+  version: '1.0'
   contact:
     name: USDA Food Safety and Inspection Service
     url: https://www.fsis.usda.gov/science-data/developer-resources/recall-api
@@ -13,29 +10,28 @@ info:
     name: U.S. Government Work
     url: https://www.usa.gov/government-works
 servers:
-  - url: https://www.fsis.usda.gov/fsis/api
-    description: FSIS production API host
+- url: https://www.fsis.usda.gov/fsis/api
+  description: FSIS production API host
 tags:
-  - name: Recalls
-    description: FSIS recall and public health alert records.
+- name: Recalls
+  description: FSIS recall and public health alert records.
 paths:
   /recall/v/1:
     get:
-      tags: [Recalls]
+      tags:
+      - Recalls
       summary: List FSIS recalls and public health alerts
-      description: >-
-        Returns the full set of FSIS recall and public health alert records.
-        The API is open and unauthenticated. Filtering is performed by the
-        client; the endpoint returns the complete dataset.
+      description: Returns the full set of FSIS recall and public health alert records. The API is open and unauthenticated. Filtering is performed by the client; the endpoint returns the complete dataset.
       operationId: listRecalls
       parameters:
-        - name: format
-          in: query
-          description: Response format (the API returns JSON by default).
-          required: false
-          schema:
-            type: string
-            enum: [json]
+      - name: format
+        in: query
+        description: Response format (the API returns JSON by default).
+        required: false
+        schema:
+          type: string
+          enum:
+          - json
       responses:
         '200':
           description: List of recall records.
