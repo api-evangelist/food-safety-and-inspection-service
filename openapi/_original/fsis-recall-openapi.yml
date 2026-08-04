@@ -1,0 +1,150 @@
+openapi: 3.0.3
+info:
+  title: FSIS Recall API
+  description: >-
+    The Food Safety and Inspection Service (FSIS) Recall API provides
+    machine-readable access to recall and public health alert records for
+    meat, poultry, and egg products regulated by USDA FSIS.
+  version: "1.0"
+  contact:
+    name: USDA Food Safety and Inspection Service
+    url: https://www.fsis.usda.gov/science-data/developer-resources/recall-api
+  license:
+    name: U.S. Government Work
+    url: https://www.usa.gov/government-works
+servers:
+  - url: https://www.fsis.usda.gov/fsis/api
+    description: FSIS production API host
+tags:
+  - name: Recalls
+    description: FSIS recall and public health alert records.
+paths:
+  /recall/v/1:
+    get:
+      tags: [Recalls]
+      summary: List FSIS recalls and public health alerts
+      description: >-
+        Returns the full set of FSIS recall and public health alert records.
+        The API is open and unauthenticated. Filtering is performed by the
+        client; the endpoint returns the complete dataset.
+      operationId: listRecalls
+      parameters:
+        - name: format
+          in: query
+          description: Response format (the API returns JSON by default).
+          required: false
+          schema:
+            type: string
+            enum: [json]
+      responses:
+        '200':
+          description: List of recall records.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Recall'
+        '404':
+          description: Resource not found.
+        '500':
+          description: Server error.
+components:
+  schemas:
+    Recall:
+      type: object
+      description: A single FSIS recall or public health alert record.
+      properties:
+        field_recall_number:
+          type: string
+          description: FSIS recall number (e.g., "001-2024").
+        field_title:
+          type: string
+          description: Title of the recall or public health alert.
+        field_recall_classification:
+          type: string
+          description: Recall classification (Class I, Class II, Class III, or Public Health Alert).
+        field_recall_type:
+          type: string
+          description: Type of action (Active Recall, Closed Recall, Public Health Alert).
+        field_active_notice:
+          type: string
+          description: Whether the recall notice is currently active ("True"/"False").
+        field_recall_date:
+          type: string
+          format: date
+          description: Date the recall was issued.
+        field_closed_date:
+          type: string
+          format: date
+          description: Date the recall was closed (if applicable).
+        field_closed_year:
+          type: string
+          description: Calendar year the recall was closed.
+        field_year:
+          type: string
+          description: Calendar year of the recall.
+        field_summary:
+          type: string
+          description: Plain-text summary of the recall.
+        field_press_release:
+          type: string
+          description: Full press release HTML.
+        field_archive_recall:
+          type: string
+          description: Whether the record is archived.
+        field_recall_reason:
+          type: string
+          description: Reason for the recall.
+        field_processing:
+          type: string
+          description: Processing category.
+        field_product_items:
+          type: string
+          description: Description of the recalled product items.
+        field_qty_recovered:
+          type: string
+          description: Quantity recovered.
+        field_recall_classification_2:
+          type: string
+          description: Secondary classification field.
+        field_recall_committee:
+          type: string
+          description: Recall committee designation.
+        field_recall_url:
+          type: string
+          description: URL of the recall on the FSIS site.
+        field_states:
+          type: string
+          description: Affected states.
+        field_risk_level:
+          type: string
+          description: Risk level designation.
+        field_distro_list:
+          type: string
+          description: Distribution list / channels.
+        field_company_media_contact:
+          type: string
+          description: Company media contact information.
+        field_establishment:
+          type: string
+          description: FSIS-regulated establishment associated with the product.
+        field_en_press_release:
+          type: string
+          description: English-language press release.
+        field_es_press_release:
+          type: string
+          description: Spanish-language press release.
+        field_has_spanish:
+          type: string
+          description: Indicator that a Spanish version exists.
+        field_labels:
+          type: string
+          description: Product labels (HTML/markup of label assets).
+        field_last_modified_date:
+          type: string
+          format: date-time
+          description: Last modification timestamp for the record.
+        langcode:
+          type: string
+          description: Language code of the record.

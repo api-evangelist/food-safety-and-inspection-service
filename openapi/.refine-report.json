@@ -1,0 +1,14 @@
+{
+  "provider": "food-safety-and-inspection-service",
+  "sources": [
+    "food-safety-and-inspection-service-recalls-api-openapi.yml"
+  ],
+  "outputs": [
+    "food-safety-and-inspection-service-recalls-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
