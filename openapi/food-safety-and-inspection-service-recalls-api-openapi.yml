@@ -1,4 +1,4 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
   title: FSIS Recall Recalls API
   description: The Food Safety and Inspection Service (FSIS) Recall API provides machine-readable access to recall and public health alert records for meat, poultry, and egg products regulated by USDA FSIS.

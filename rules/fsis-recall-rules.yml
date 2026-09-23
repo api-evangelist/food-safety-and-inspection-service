@@ -1,4 +1,4 @@
-name: FSIS Recall Usage Rules
+x-name: FSIS Recall Usage Rules
 description: Operational and consumption rules for the FSIS Recall API.
 rules:
   - id: open-data
