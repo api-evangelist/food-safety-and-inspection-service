@@ -34,7 +34,7 @@ created: '2024-12-03'
 modified: '2026-05-19'
 position: Consuming
 tags:
-  - Federal-Government
+  - Federal Government
   - Food
   - Food Safety
   - Inspection
@@ -51,6 +51,7 @@ tags_raw:
   - Meat
   - Poultry
   - Eggs
+  - Federal-Government
 url: https://raw.githubusercontent.com/api-evangelist/food-safety-and-inspection-service/refs/heads/main/apis.yml
 specificationVersion: '0.23'
 apis:
