@@ -1,4 +1,4 @@
-# Food Safety and Inspection Service (food-safety-and-inspection-service)
+# Food Safety and Inspection Service
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,62 +66,119 @@
 
 The Food Safety and Inspection Service (FSIS) is a branch of the United States Department of Agriculture (USDA) responsible for ensuring the safety of the nation's commercial supply of meat, poultry, and egg products. FSIS publishes a Recall API that provides machine-readable access to recall and public health alert records.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/food-safety-and-inspection-service/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/food-safety-and-inspection-service/refs/heads/main/apis.yml)
+**Areas:** Federal Government · Food · Food Safety · Inspection · Recalls · Meat · Poultry · Eggs
 
-## Scope
+## Food Safety and Inspection Service on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Food Safety and Inspection Service is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/food-safety-and-inspection-service/](https://apis.io/providers/food-safety-and-inspection-service/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Federal Government
-- Food
-- Food Safety
-- Inspections
-- Recalls
-- Meat
-- Poultry
-- Eggs
+- [Food Safety and Inspection Service Recalls API](https://apis.io/apis/food-safety-and-inspection-service/food-safety-and-inspection-service-recalls-api/) — FSIS recall and public health alert records.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-12-03
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### FSIS Recall API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The FSIS Recall API returns a JSON list of recall and public health alert records for meat, poultry, and egg products. The endpoint is open and unauthenticated; the full dataset is returned on each request.
+- [Food Safety And Inspection Service Agentic Access](https://apis.io/agentic-access/food-safety-and-inspection-service/food-safety-and-inspection-service-agentic-access/)
 
-- **Human URL:** [https://www.fsis.usda.gov/science-data/developer-resources/recall-api](https://www.fsis.usda.gov/science-data/developer-resources/recall-api)
-- **Base URL:** `https://www.fsis.usda.gov/fsis/api`
+#### Collections (2)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Recalls
-- Food Safety
-- Public Health Alerts
+- [FSIS Recall Recalls API](https://apis.io/collections/food-safety-and-inspection-service/open-food-safety-and-inspection-service-recalls-api/)
+- [FSIS Recall API](https://apis.io/collections/food-safety-and-inspection-service/open-fsis-recall/)
 
-#### Properties
+#### Governance rules (1)
 
-- [Documentation](https://www.fsis.usda.gov/science-data/developer-resources/recall-api)
-- [OpenAPI](https://raw.githubusercontent.com/api-evangelist/food-safety-and-inspection-service/refs/heads/main/openapi/fsis-recall-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Capabilities](https://raw.githubusercontent.com/api-evangelist/food-safety-and-inspection-service/refs/heads/main/capabilities/fsis-recall-capabilities.yml)
-- [Rules](https://raw.githubusercontent.com/api-evangelist/food-safety-and-inspection-service/refs/heads/main/rules/fsis-recall-rules.yml)
-- [Postman Collection](collections/fsis-recall.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/fsis-recall.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Spectral rulesets for the provider's contracts.
 
-## Common Properties
+- [Food Safety and Inspection Service — fsis recall rules](https://apis.io/rules/food-safety-and-inspection-service/fsis-recall-rules/)
 
-- [LinkedIn](https://www.linkedin.com/company/usda-fsis)
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Food Safety And Inspection Service Domain Security](https://apis.io/security/food-safety-and-inspection-service/food-safety-and-inspection-service-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Food Safety And Inspection Service Plans Pricing](https://apis.io/plans/food-safety-and-inspection-service/food-safety-and-inspection-service-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Food Safety And Inspection Service Rate Limits](https://apis.io/rate-limits/food-safety-and-inspection-service/food-safety-and-inspection-service-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Food Safety And Inspection Service Finops](https://apis.io/finops/food-safety-and-inspection-service/food-safety-and-inspection-service-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.fsis.usda.gov/)
 - [Documentation](https://www.fsis.usda.gov/science-data/developer-resources/recall-api)
-- [Recalls](https://www.fsis.usda.gov/recalls)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 21.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 45.9 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 7.9 |
+
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/food-safety-and-inspection-service/](https://apis.io/providers/food-safety-and-inspection-service/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Food Safety and Inspection Service: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/food-safety-and-inspection-service/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
